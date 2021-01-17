@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="MovieDB.Register" 
+             xmlns:local="clr-namespace:MovieDB.Controls"
+             BackgroundColor="#2f4259"
+             Title="Register">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="primary">#3ec3d5</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="40" Spacing="10">
+                <Label  HorizontalOptions="CenterAndExpand" 
+                              Text="MovieDB" 
+                              TextColor="White" 
+                              FontSize="40" />
+
+                <local:ImageEntry TextColor="White" x:Name="eUsername" 
+                        PlaceholderColor="{StaticResource primary}" 
+                        Image="user"
+                        Placeholder="Username" 
+                        HorizontalOptions="FillAndExpand"/>
+                <local:ImageEntry TextColor="White" x:Name="ePassword"  
+                        PlaceholderColor="{StaticResource primary}"  
+                        Image="password" 
+                        Placeholder="Password" 
+                        IsPassword="True"
+                        HorizontalOptions="FillAndExpand"/>
+                <local:ImageEntry TextColor="White" x:Name="eConfirmPassword"  
+                        PlaceholderColor="{StaticResource primary}"  
+                        Image="password" 
+                        Placeholder="Confirm Password" 
+                        IsPassword="True"
+                        HorizontalOptions="FillAndExpand" Unfocused="eConfirmPassword_Unfocused"/>
+                <local:ImageEntry TextColor="White" x:Name="eFirstName" 
+                        PlaceholderColor="{StaticResource primary}" 
+                        Image="user"
+                        Placeholder="First Name" 
+                        HorizontalOptions="FillAndExpand"/>
+                <local:ImageEntry TextColor="White" x:Name="eLastName"
+                        PlaceholderColor="{StaticResource primary}" 
+                        Image="user" 
+                        Placeholder="Last Name" 
+                        HorizontalOptions="FillAndExpand"/>
+                <local:ImageEntry TextColor="White" x:Name="eEmail"
+                        PlaceholderColor="{StaticResource primary}" 
+                        Image="email" 
+                        Placeholder="Email" 
+                        HorizontalOptions="FillAndExpand"/>
+
+                <Button TextColor="White" 
+                         Text="Register"  
+                         BackgroundColor="{StaticResource primary}"
+                         HorizontalOptions="FillAndExpand" Clicked="Button_Clicked"/>
+
+                <!--<Label Text="I have an account" VerticalOptions="EndAndExpand"
+                        HorizontalOptions="Center" 
+                        TextColor="{StaticResource primary}"/>-->
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

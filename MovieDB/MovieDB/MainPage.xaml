@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"  
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+             xmlns:pages="clr-namespace:MovieDB"
+             MasterBehavior="Popover"
+             x:Class="MovieDB.MainPage">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Master" Padding="0,0,0,15" BackgroundColor="#e8e8e8">
+            <ContentPage.Resources>
+                <ResourceDictionary>
+                    <!--<Color x:Key="primary">#3ec3d5</Color>-->
+                </ResourceDictionary>
+            </ContentPage.Resources>
+            <ContentPage.Content>
+                <StackLayout Orientation="Vertical">
+                    <Image x:Name="menu" Source="nav.jpg" HorizontalOptions="FillAndExpand"></Image>
+                    <Label Text="Welcome to MovieDB" Padding="0,0,0,10" />
+
+                    <ListView x:Name="menuList" ItemSelected="menuList_ItemSelected" RowHeight="55" SeparatorVisibility="Default" SeparatorColor="Black">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal" Padding="20,10,0,10" Spacing="20">
+                                        <Image Source="{Binding ImagePath}" WidthRequest="40" HeightRequest="40" />
+                                        <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical">
+                                            <Label Text="{Binding Text}" FontSize="Small" VerticalOptions="End" TextColor="Black" />
+                                            <Label Text="{Binding Detail}" FontSize="Micro" VerticalOptions="End" TextColor="Black" />
+                                        </StackLayout>
+                                    </StackLayout>
+                                </ViewCell>
+                                <!--<ImageCell Text="{Binding Text}" TextColor="Blue" Detail="{Binding Detail}" ImageSource="{Binding ImagePath}" Height="60">
+
+                                </ImageCell>-->
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage></NavigationPage>
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>
+
+<!--<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="MovieDB.MainPage"
+             xmlns:local="clr-namespace:MovieDB.Controls" BackgroundColor="#2f4259">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="primary">#3ec3d5</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="40" Spacing="10">
+                <Label  HorizontalOptions="CenterAndExpand" 
+                              Text="MovieDB" 
+                              TextColor="White" 
+                              FontSize="40" />
+
+                <local:ImageEntry TextColor="White" 
+                        PlaceholderColor="{StaticResource primary}" 
+                        Image="user" 
+                        Placeholder="Username" 
+                        HorizontalOptions="FillAndExpand"
+                        x:Name="ieUsername"/>
+                <local:ImageEntry TextColor="White" 
+                    PlaceholderColor="{StaticResource primary}"  
+                    Image="password" 
+                    Placeholder="Password" 
+                    HorizontalOptions="FillAndExpand"
+                    x:Name="iePassword" 
+                    IsPassword="True"/>
+
+                <Button HeightRequest="50" 
+                         TextColor="White" 
+                         Text="Login"  
+                         BackgroundColor="{StaticResource primary}"
+                         HorizontalOptions="FillAndExpand" 
+                         Clicked="LoginButton_Clicked"/>
+
+                <Label  Text="Forgot password" 
+                        HorizontalOptions="Center" 
+                        TextColor="{StaticResource primary}"/>
+
+                <Label Margin="0,0,0,20" Text="I don't have an account" VerticalOptions="EndAndExpand"
+                        HorizontalOptions="Center" 
+                        TextColor="{StaticResource primary}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                                    Tapped="Handle_Clicked"
+                                    NumberOfTapsRequired="1" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>-->

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XamlProjectMeta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Files>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Kevin\source\repos\MovieDB\MovieDB\MovieDB\App.xaml</FilePath>
+      <Hash>ED-EB-03-3B-4C-2D-FC-BE-E2-4B-09-74-0C-09-0B-78</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Kevin\source\repos\MovieDB\MovieDB\MovieDB\MainPage.xaml</FilePath>
+      <Hash>75-8C-DD-5D-7A-FD-1B-3D-60-9E-DB-D4-F5-3C-95-88</Hash>
+      <Properties>
+        <string>MasterBehavior</string>
+      </Properties>
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Kevin\source\repos\MovieDB\MovieDB\MovieDB\Views\Dashboard.xaml</FilePath>
+      <Hash>E7-87-FF-11-52-F8-CA-FD-52-76-67-C4-22-67-2C-20</Hash>
+      <Properties>
+        <string>BackgroundColor</string>
+        <string>Title</string>
+      </Properties>
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Kevin\source\repos\MovieDB\MovieDB\MovieDB\Views\Detail.xaml</FilePath>
+      <Hash>06-44-8E-F6-3E-76-2F-83-E3-2B-3B-97-C9-13-C8-2F</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Kevin\source\repos\MovieDB\MovieDB\MovieDB\Views\List.xaml</FilePath>
+      <Hash>24-3E-FA-D0-E6-55-67-21-5A-B3-8E-11-5B-EB-3E-07</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Kevin\source\repos\MovieDB\MovieDB\MovieDB\Views\Login.xaml</FilePath>
+      <Hash>60-31-D4-6E-50-D1-61-0D-0F-29-08-41-F7-2F-A0-83</Hash>
+      <Properties>
+        <string>BackgroundColor</string>
+        <string>Title</string>
+      </Properties>
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Kevin\source\repos\MovieDB\MovieDB\MovieDB\Views\MovieSearch.xaml</FilePath>
+      <Hash>54-60-20-34-E2-4F-11-92-D1-4A-C5-93-ED-A6-6B-F2</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Kevin\source\repos\MovieDB\MovieDB\MovieDB\Views\PeopleSearch.xaml</FilePath>
+      <Hash>56-14-65-B3-BF-5E-40-04-A0-D0-EC-B1-28-02-F2-D1</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Kevin\source\repos\MovieDB\MovieDB\MovieDB\Views\Register.xaml</FilePath>
+      <Hash>23-80-3C-F2-A7-95-46-DF-81-C7-8F-D3-D7-FD-20-70</Hash>
+      <Properties>
+        <string>BackgroundColor</string>
+        <string>Title</string>
+      </Properties>
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Kevin\source\repos\MovieDB\MovieDB\MovieDB\Views\Settings.xaml</FilePath>
+      <Hash>2C-B2-CA-43-29-44-ED-27-A5-AC-07-32-EE-8D-CC-6D</Hash>
+      <Properties>
+        <string>Title</string>
+      </Properties>
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Kevin\source\repos\MovieDB\MovieDB\MovieDB\Views\TVShowSearch.xaml</FilePath>
+      <Hash>9A-27-91-02-6F-4F-FD-96-EA-BC-31-48-C3-AC-7E-77</Hash>
+      <Properties />
+    </XamlFileMeta>
+  </Files>
+</XamlProjectMeta>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:sv="clr-namespace:AiForms.Renderers;assembly=SettingsView"
+             mc:Ignorable="d"
+             x:Class="MovieDB.App">
+    <Application.Resources>
+        <OnPlatform x:TypeArguments="x:String" x:Key="FontAwesomeRegular">
+            <On Platform="iOS" Value="FontAwesome5Free-Regular" />
+            <On Platform="Android" Value="fa-regular.otf#Regular" />
+        </OnPlatform>
+        <OnPlatform x:TypeArguments="x:String" x:Key="FontAwesomeSolid">
+            <On Platform="iOS" Value="FontAwesome5Free-Solid" />
+            <On Platform="Android" Value="fa-solid.otf#Solid" />
+        </OnPlatform>
+        <OnPlatform x:TypeArguments="x:String" x:Key="LatoBlack">
+            <On Platform="iOS" Value="Lato-Black" />
+            <On Platform="Android" Value="Lato-Black.ttf#Regular" />
+        </OnPlatform>
+        <OnPlatform x:TypeArguments="x:String" x:Key="LatoBold">
+            <On Platform="iOS" Value="Lato-Bold" />
+            <On Platform="Android" Value="Lato-Bold.ttf#Bold" />
+        </OnPlatform>
+        <OnPlatform x:TypeArguments="x:String" x:Key="LatoRegular">
+            <On Platform="iOS" Value="Lato-Regular" />
+            <On Platform="Android" Value="Lato-Regular.ttf#Regular" />
+        </OnPlatform>
+
+        <Color x:Key="navBarColor"></Color>
+        <Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor" Value="{DynamicResource navBarColor}"/>
+        </Style>
+
+        <ResourceDictionary>
+            <Color x:Key="AppBackground">#ffffff</Color>
+            <Color x:Key="AccentColor">#FFBF00</Color>
+            <Color x:Key="DisabledColor">#E6DAB9</Color>
+            <Color x:Key="TitleTextColor">#CC9900</Color>
+            <Color x:Key="PaleBackColorPrimary">#F2EFE6</Color>
+            <Color x:Key="PaleBackColorSecondary">#F2EDDA</Color>
+            <Color x:Key="DeepTextColor">#555555</Color>
+            <Color x:Key="NormalTextColor">#666666</Color>
+            <Color x:Key="PaleTextColor">#999999</Color>
+            <Color x:Key="EmphasisTextColor">#FF0000</Color>
+            <x:Double x:Key="BaseFontSize">12</x:Double>
+            <x:Double x:Key="BaseFontSize+">14</x:Double>
+            <x:Double x:Key="BaseFontSize++">17</x:Double>
+            <x:Double x:Key="BaseFontSize-">11</x:Double>
+
+            <Style TargetType="sv:SettingsView" x:Key="settingsView">
+                <Setter Property="SeparatorColor" Value="{StaticResource DisabledColor}" />
+                <Setter Property="BackgroundColor" Value="{StaticResource PaleBackColorPrimary}" />
+                <Setter Property="HeaderBackgroundColor" Value="{StaticResource PaleBackColorPrimary}" />
+                <Setter Property="CellBackgroundColor" Value="{StaticResource AppBackground}" />
+                <Setter Property="CellTitleColor" Value="{StaticResource DeepTextColor}" />
+                <Setter Property="CellValueTextColor" Value="{StaticResource NormalTextColor}" />
+                <Setter Property="CellTitleFontSize" Value="{StaticResource BaseFontSize++}" />
+                <Setter Property="CellValueTextFontSize" Value="{StaticResource BaseFontSize}" />
+                <Setter Property="CellDescriptionColor" Value="{StaticResource NormalTextColor}" />
+                <Setter Property="CellDescriptionFontSize" Value="{StaticResource BaseFontSize-}" />
+                <Setter Property="CellAccentColor" Value="{StaticResource AccentColor}" />
+                <Setter Property="SelectedColor" Value="#50FFBF00" />
+                <Setter Property="HeaderTextColor" Value="{StaticResource TitleTextColor}" />
+                <Setter Property="FooterFontSize" Value="{StaticResource BaseFontSize-}" />
+                <Setter Property="FooterTextColor" Value="{StaticResource PaleTextColor}" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
